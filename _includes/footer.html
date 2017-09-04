@@ -1,30 +1,11 @@
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <ul class="list-inline">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted small">{{ site.copyright }}</p>
-            </div>
-            <div class="col-md-4">
-                {{ site.credits }}
-            </div>
-        </div>
+<!-- footer start -->
+
+<footer class="site-footer">
+  <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe!</span></a>
+    <div class="inner">
+         <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; All rights reserved.</section>
+         <section class="poweredby">Made with <a href="http://jekyllrb.com"> Jekyll</a></section>
     </div>
 </footer>
+
+<!-- footer end -->

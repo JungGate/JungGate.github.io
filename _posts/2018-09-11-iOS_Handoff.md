@@ -14,7 +14,7 @@ iOS Device 연속성을 보장해주기 위한 Handoff 기능에 대해서 확�
 
 ## About Handoff
 
-[Apple 개발자 홈페이지](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html#//apple_ref/doc/uid/TP40014338) 에서 handoff 를 확인해보면
+[Apple 개발자 홈페이지](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html#//apple_ref/doc/uid/TP40014338)에서 handof 를 확인해 보면
 
 > Handoff is a capability introduced in iOS 8 and OS X v10.10 that transfers user activities among multiple devices associated with the same user. In iOS 9 and OS X v10.11, Handoff helps your app participate in search by making it possible to designate user activities and app states as searchable. For example, when a searchable activity or state appears in Spotlight search results or Siri suggestions, users can tap the result to return to the relevant area in your app.
 >
@@ -22,7 +22,7 @@ iOS Device 연속성을 보장해주기 위한 Handoff 기능에 대해서 확�
 
 간략하게 요약하면
 
-Handoff 기능은 iOS8와  macOS10.10(요세미티) 버전에서 부터 지원을 시작하였는데, 같은 유저에 대해서 다른 디바이스같에 연속성을 보장해주기 위한 기능.
+Handoff 기능은 iOS8와  macOS10.10(요세미티) 버전에서 부터 지원을 시작하였는데, 같은 유저에 대해서 다른 디바이스에 연속성을 보장해주기 위한 기능.
 
 정도로 이해하면 되겠다. 
 

@@ -1,10 +1,11 @@
 ---
 layout: archive
-permalink: /year-archive/
+categories: swift
 title:  "Handoff 기능 사용하기"
 date:   2018-09-11 14:29:11 +0900
 tags: 
  - ios
+ - swift
  - handoff
 ---
 

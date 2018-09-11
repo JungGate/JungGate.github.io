@@ -103,8 +103,13 @@ author:
   name             : "JungGate"
   avatar           : "/assets/images/profile.jpg"
   bio              : "iOS Developer"
-  location         : "Seoul, Korea"
+  location       : "Seoul, Korea"
   email            : "josansnim@gmail.com"
+  github          : "JungGate"
+  facebook     : "junggatekim"
+  instagram   : "josansnim"
+  youtube       : "josansnim"
+
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -285,6 +290,4 @@ defaults:
       comments: true
       share: true
       related: true
-
-# Font
-font: "'Noto Sans', 'Nanum Gothic', Helvetica, Arial, sans-serif"
+      toc: true

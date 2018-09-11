@@ -1,10 +1,10 @@
 ---
 layout: archive
-permalink: /year-archive/
 title:  "Handoff 기능 사용하기"
 date:   2018-09-11 14:29:11 +0900
 tags: 
  - ios
+ - swift
  - handoff
 ---
 
@@ -14,7 +14,7 @@ iOS Device 연속성을 보장해주기 위한 Handoff 기능에 대해서 확�
 
 ## About Handoff
 
-[Apple 개발자 홈페이지](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html#//apple_ref/doc/uid/TP40014338)에서 handof 를 확인해 보면
+[Apple 개발자 홈페이지](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html#//apple_ref/doc/uid/TP40014338)에서 handoff를 확인해보면
 
 > Handoff is a capability introduced in iOS 8 and OS X v10.10 that transfers user activities among multiple devices associated with the same user. In iOS 9 and OS X v10.11, Handoff helps your app participate in search by making it possible to designate user activities and app states as searchable. For example, when a searchable activity or state appears in Spotlight search results or Siri suggestions, users can tap the result to return to the relevant area in your app.
 >
@@ -22,7 +22,8 @@ iOS Device 연속성을 보장해주기 위한 Handoff 기능에 대해서 확�
 
 간략하게 요약하면
 
-Handoff 기능은 iOS8와  macOS10.10(요세미티) 버전에서 부터 지원을 시작하였는데, 같은 유저에 대해서 다른 디바이스에 연속성을 보장해주기 위한 기능.
+> Handoff 기능은 iOS8와  macOS10.10(요세미티) 버전부터 지원을 시작하였는데, 같은 유저에 대해서 다른 디바이스에 연속성을 보장해주기 위한 기능.
+>
 
 정도로 이해하면 되겠다. 
 
@@ -32,18 +33,20 @@ Handoff 기능을 이용해 다른 디바이스에서 보고있던 웹 페이지
 
 (iPhone에서 보던 웹 페이지 → iPad에서 보기 혹은 그 반대)
 
+
+
 ## Handoff 데이터 발생하기
 
 간단하게 `func startHandoff(url:URL)` 메소드를 만들고, 파라메터로 현재 보고 있는 웹페이지를 `NSUserActivity` 클래스를 통해 공유한다.
 
 중요한 것은  handoff기능으 iCould를 기반으로 하기 때문에 iPhone과 iPad에 같은 Apple 계정으로 로그인 되어 있어야한다.
 
-```Swift
+```swift
 // Define.swift
 let kUserActivityType = "com.handoff.testapp"
 ```
 
-````swift
+```swift
 // WebViewController.swift
 func startHandoff(url:URL){
     let userActivity = NSUserActivity(activityType: kUserActivityType) // type은 Bundle Identifier를 사용하면 된다.
@@ -51,7 +54,7 @@ func startHandoff(url:URL){
     self.userActivity = userActivity
     self.userActivity?.becomeCurrent()  // handoff event 발생
 }
-````
+```
 
 
 
@@ -59,7 +62,9 @@ func startHandoff(url:URL){
 
 Handoff 이벤트가 발생하게되면 각 디바이스에 icon이 표시된다. 
 
-![handoff_ipad](../assets/images/2018-09-11-iOS_Handoff.assets/handoff_ipad.png)![handoff_iphonex](../assets/images/2018-09-11-iOS_Handoff.assets/handoff_iphonex.png) 
+![handoff_ipad](../assets/images/2018-09-11-iOS_Handoff.assets/handoff_ipad.png)	  ![handoff_iphonex](../assets/images/2018-09-11-iOS_Handoff.assets/handoff_iphonex.png)    
+
+
 
 ## Handoff 데이터 받기
 

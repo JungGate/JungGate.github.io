@@ -291,3 +291,5 @@ defaults:
       share: true
       related: true
       toc: true
+
+github: [metadata]

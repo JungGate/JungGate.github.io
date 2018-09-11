@@ -1,9 +1,9 @@
 ---
 layout: archive
+permalink: /year-archive/
 title:  "블로그를 시작하다."
 date:   2017-09-12 23:14:11
-categories: posts
-tags: junggate
+tags: etc
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 ---
 

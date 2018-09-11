@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: archive
 title:  "블로그를 시작하다."
 date:   2017-09-12 23:14:11
-categories: etc
+categories: posts
 tags: junggate
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 ---
@@ -42,3 +42,4 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 언제나 그랬듯 시간이 지나면 나에게 익숙해 질 것이다.
 
 **화이팅!**
+

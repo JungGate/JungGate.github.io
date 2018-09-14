@@ -1,7 +1,7 @@
 ---
-layout: archive
 title:  "Handoff 기능 사용하기"
 date:   2018-09-11 14:29:11 +0900
+categories: swift
 tags: 
  - ios
  - swift
@@ -62,7 +62,7 @@ func startHandoff(url:URL){
 
 Handoff 이벤트가 발생하게되면 각 디바이스에 icon이 표시된다. 
 
-![handoff_ipad](../assets/images/2018-09-11-iOS_Handoff.assets/handoff_ipad.png)	  ![handoff_iphonex](../assets/images/2018-09-11-iOS_Handoff.assets/handoff_iphonex.png)    
+![handoff_ipad](/assets/images/2018-09-11-iOS_Handoff.assets/handoff_ipad.png)	  ![handoff_iphonex](/assets/images/2018-09-11-iOS_Handoff.assets/handoff_iphonex.png)    
 
 
 
